@@ -1,0 +1,7 @@
+@hostname=localhost
+@port=7199
+
+# Call function with dependency injection
+GET http://{{hostname}}:{{port}}/api/di
+
+###

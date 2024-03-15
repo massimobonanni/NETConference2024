@@ -1,0 +1,19 @@
+@hostname=localhost
+@port=7199
+
+# Function call with MyCustomMidleware
+POST http://{{hostname}}:{{port}}/api/contacts
+
+[
+    {
+        "FirstName": "John",
+        "LastName": "Doe",
+        "Email": ""
+    },
+    {
+        "FirstName": "Jane",
+        "LastName": "Doe",
+        "Email": ""
+    }
+]
+###

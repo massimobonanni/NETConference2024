@@ -1,0 +1,8 @@
+@hostname=localhost
+@port=7199
+
+# Function call for new multiple output
+POST http://{{hostname}}:{{port}}/api/multipleout/new
+
+Call at {{$datetime "dd-MM-yyyy HH:mm:ss"}}
+###

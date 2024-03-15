@@ -1,0 +1,28 @@
+@hostname=localhost
+@port=7124
+
+# Call Azure openAI Completion
+GET http://{{hostname}}:{{port}}/api/whois/albert%20einstein
+
+###
+
+# Azure open Ai Chat
+@chatId=11111111
+# Send System message
+PUT http://{{hostname}}:{{port}}/api/chats/11111111
+
+{
+    "instructions":"You are a funny assistant that help people to discover the biography of amazing people."
+}
+###
+
+# Send user message
+POST http://{{hostname}}:{{port}}/api/chats/{{chatId}}
+
+Who is Albert Eninstein?
+
+###
+
+# Get Chat status
+GET http://{{hostname}}:{{port}}/api/chats/{{chatId}}
+###

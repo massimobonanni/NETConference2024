@@ -1,0 +1,12 @@
+@hostname=localhost
+@port=7199
+
+# Function call with MyCustomMidleware
+GET http://{{hostname}}:{{port}}/api/middleware
+
+###
+
+# Function call with ExceptionMiddleware
+GET http://{{hostname}}:{{port}}/api/middleware?throw-exception
+
+###
