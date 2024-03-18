@@ -1,0 +1,12 @@
+@hostname=localhost
+@port=7013
+
+# Call function with dependency injection
+POST http://{{hostname}}:{{port}}/api/WriteToBlob
+
+{
+    "blobName": "testblob",
+    "content": "Hello, world!"
+}
+
+###

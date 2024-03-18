@@ -24,7 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MakeGetCalls.ps1 = MakeGetCalls.ps1
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAI", "OpenAI\OpenAI.csproj", "{A49E2A50-5F57-45D0-8943-EC718AF116F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAI", "OpenAI\OpenAI.csproj", "{A49E2A50-5F57-45D0-8943-EC718AF116F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDKTypes", "SDKTypes\SDKTypes.csproj", "{26B02E54-C737-4C01-94BF-6A2F271513DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{A49E2A50-5F57-45D0-8943-EC718AF116F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A49E2A50-5F57-45D0-8943-EC718AF116F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A49E2A50-5F57-45D0-8943-EC718AF116F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B02E54-C737-4C01-94BF-6A2F271513DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B02E54-C737-4C01-94BF-6A2F271513DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B02E54-C737-4C01-94BF-6A2F271513DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B02E54-C737-4C01-94BF-6A2F271513DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
