@@ -2,6 +2,7 @@ using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
+using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Logging;
 
 namespace SDKTypes
@@ -11,10 +12,11 @@ namespace SDKTypes
         private readonly ILogger<Function> _logger;
         private readonly BlobServiceClient _blobServiceClient;
 
-        public Function(ILogger<Function> logger, BlobServiceClient client)
+        public Function(ILogger<Function> logger, 
+            IAzureClientFactory<BlobServiceClient> blobServiceClientFactory)
         {
             _logger = logger;
-            _blobServiceClient = client;
+            _blobServiceClient = blobServiceClientFactory.CreateClient("blobService");
         }
 
         [Function("WriteToBlob")]
